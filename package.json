@@ -29,5 +29,8 @@
     "js-build": "babel _javascript --out-dir lib",
     "js-watch": "npm run js-build -- --watch",
     "start": "npm-run-all --parallel css-watch js-watch"
+  },
+  "dependencies": {
+    "bulma-extensions": "^4.0.0"
   }
 }
