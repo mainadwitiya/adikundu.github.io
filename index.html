@@ -19,9 +19,23 @@
       transform: rotate(90deg);
       margin: 10px;
   }
+  .Rectangle {
+  width: 800px;
+  height: 500px;
+  position: absolute;
+  top:500px;
+  left: 50px;
+  border-radius: 4px;
+  background-image: linear-gradient(to left, #8066dc, #63299f);
+  clip-path: polygon(0 0, 100% 0, 62% 100%, 0 90%);
+  z-index: 2;
+}
 
   </style>
   <body>
+    <div class="Rectangle is-hidden-mobile">
+
+    </div>
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
@@ -43,8 +57,8 @@
                 <div class="column"></div>
             </div>
         </section>
-        <section style="background-color: #1d1d1d">
-          <hr style="width:1000px;">
+        <section style="background-color: #1d1d1d;position:relative;">
+
             <div class="container" style="padding:100px 0;">
                 <div class="columns">
                     <div class="column is-two-fifths">
@@ -54,17 +68,20 @@
                     </div>
                 </div>
                 <div class="columns">
-                    <div class="column is-5">
+                    <div  style="position:relate;z-index:100" class="column is-5">
+
+
+
                             <div style="margin: 10px 0;">
                                     <a class="button is-size-7">Branding</a>
                                     <a class="button is-size-7">UI</a>
                             </div>
-                        <div class="card">
+                        <div  class="card">
                             <div class="card-content">
                                 <div class="media">
-                                    <div class="media-content">
+
                                         <p class="title is-size-3 is-size-4-mobile has-text-grey-darker">Aadhaar Tech</p>
-                                    </div>
+
                                 </div>
 
                                 <div class="content has-text-grey is-size-5 is-size-6-mobile" style="padding: 20px 0;">
@@ -79,6 +96,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="column is-5 is-offset-2">
                             <div style="margin: 10px 0;">
                                     <a class="button is-size-7">Branding</a>
@@ -87,10 +105,10 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="media">
-                                    <div class="media-content">
+
                                         <p class="title is-size-3 is-size-4-mobile has-text-grey-darker">CSE Association</p>
                                     </div>
-                                </div>
+
 
                                 <div class="content has-text-grey is-size-5 is-size-6-mobile" style="padding: 20px 0;">
                                     I worked on the development of the visual identity of CSE Association, the student-run association of the department of Computer Science and Engineering SRM IST.
@@ -113,9 +131,9 @@
                         <div class="card">
                             <div class="card-content">
                                 <div class="media">
-                                    <div class="media-content">
+
                                         <p class="title is-size-3 is-size-4-mobile has-text-grey-darker">Campskil</p>
-                                    </div>
+
                                 </div>
 
                                 <div class="content has-text-grey is-size-5 is-size-6-mobile" style="padding: 20px 0;">
@@ -151,11 +169,6 @@
             </div>
         </div>
     </footer>
-
-
-
-
-
 
     <script type="text/javascript" src="lib/main.js"></script>
   </body>
