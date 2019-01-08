@@ -12,25 +12,121 @@
             margin-bottom: 1.25rem;
         }
 
+        .project-body-text{
+            font-family: colfax;
+            line-height: 1.75rem;
+        }
+
+        .project-hero-title{
+            font-family: colfax;
+            font-size: 2rem;
+            font-weight: medium;
+            margin-bottom: 3rem;
+            color: #ffffff;
+        }
+
+        .project-hero-text{
+            font-family: colfax;
+            font-size: 1rem;
+            color: #B8BECB;
+            padding-bottom: 1rem;
+        }
+
+        .section-label{
+            font-weight: 800;
+            letter-spacing: 0.075rem;
+            font-size: 0.75rem;
+            color: #B8BECB;
+        }
+
+        .project-image-label{
+            font-size: 0.75rem;
+            color: #838383;
+            padding-bottom: 3rem;
+        }
+
         .pads {
             border-left-style: solid;
             border-left-color: #ffcb22;
         }
+
+        .is-footer-text{
+            line-height: 1.6;
+            font-family: colfax;
+            color: #B8BECB;
+            font-size: 1.2rem;
+        }
+
+        .footer-link{
+            color: #1d1d1d;
+            cursor: pointer;
+        }
+
+        span {
+          position: relative;
+          display: inline;
+          cursor: pointer;
+        }
+
+        span:before, span:after {
+          content: '';
+          position: absolute;
+          width: 0%;
+          height: 1px;
+          top: 50%;
+          margin-top: -0.5px;
+          background: #1d1d1d;
+        }
+
+        span:before {
+          left: -2.5px;
+        }
+        span:after {
+          right: 2.5px;
+          background: #1d1d1d;
+          transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+        }
+
+        span:hover:before {
+          background: #1d1d1d;
+          width: 100%;
+          transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+        }
+
+        span:hover:after {
+          background: transparent;
+          width: 100%;
+          transition: 0s;
+        }
+
+        @media screen and (min-width: 800px){
+            .hero-padding-mod{
+                padding-left: 6rem;
+            }
+
+            .section-hero-mod{
+                border-radius: 5px;
+            }
+
+            .container-margin-mod{
+                margin-top: 4rem;
+            }
+        }
+
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <section style="background-image: url('https://i.imgur.com/4JWEIWU.png'); background-position: center; background-blend-mode: multiply;"
-            class="hero is-dark is-medium">
-            <div class="hero-body">
+    <div class="container container-margin-mod">
+        <section style="background-image: url('https://i.imgur.com/4JWEIWU.png'); background-position: center; background-blend-mode: multiply; background-color: #838383;" class="hero is-medium section-hero-mod">
+            <div class="hero-padding-mod hero-body" style="padding-top: 4rem; padding-bottom: 4rem;">
 
-                <h1 class="title">Campskill</h1>
-                <p class="subtitle">I worked on the development of the visual identity of CSE Association, the
+                <h1 class="project-hero-title">Campskil</h1>
+                <p class="project-hero-text is-size-6-touch">I worked on the development of the visual identity of CSE Association, the
                     student-run association of the Department of Computer Science and Engineering, SRM IST.</p>
-                <p class="subtitle">Worked on the design and media of the events organized by CSEA in the academic year
+                <p class="project-hero-text is-size-6-touch">Worked on the design and media of the events organized by CSEA in the academic year
                     2017-2018.</p>
-                <h1>july 2017</h1>
+                <h1 class="project-hero-text" style="margin-top:6rem;">July 2017</h1>
             </div>
         </section>
     </div>
@@ -40,10 +136,10 @@
         <div class="hero-body">
             <div class="columns">
                 <div class="column is-2">
-                    <h1 class="is-size-5 has-text-weight-semibold has-text-right has-text-grey">GOAL</h1>
+                    <h1 class="has-text-right section-label" style="padding-top: 0.3rem;">GOAL</h1>
                 </div>
                 <div class="column is-8">
-                    <p>The existing logotype lacked a solid appeal and was incoherent with the rest of the design
+                    <p class="project-body-text">The existing logotype lacked a solid appeal and was incoherent with the rest of the design
                         system. The rectangular low-poly logo with the circular bird did not fit alongside rest of the
                         brand.</p>
                 </div>
@@ -52,7 +148,7 @@
     </section>
 
     <section class="hero">
-        <div class="hero-body">
+        <div class="hero-body" style="padding-bottom: 0rem;">
             <div class="container has-text-centered">
 
                 <img src="https://imgur.com/xNBaTGl.png" height="48px" width="160px">
@@ -61,7 +157,7 @@
         </div>
         <div class="hero-foot">
             <div class="container has-text-centered">
-                <h1 class="sub-title">
+                <h1 class="project-image-label">
                     The previous logo for Campskil.
                 </h1>
             </div>
@@ -76,12 +172,12 @@
 
                 </div>
                 <div class="column is-8">
-                    <p class="sub-title">
+                    <p class="project-body-text">
                         The company was a fledgling startup and needed a visual identity that exhibits the youthfulness
                         but also the ambition of the founders. The warm and youthful colours in the existing logo
                         however, were a strong factor embedded within it.
                     </p>
-                    <p>
+                    <p class="project-body-text">
                         During initial interviews with the stakeholders within the company, it became known that they
                         would like Campskil to represent youth and freedom. These two emotions formulated the core
                         ethos of the company.
@@ -94,7 +190,7 @@
 
     </section>
     <section class="hero">
-        <div class="hero-body">
+        <div class="hero-body" style="padding-bottom: 1rem;">
             <div class="container has-text-centered">
 
                 <img src="https://imgur.com/AFvAjAe.png">
@@ -103,7 +199,7 @@
         </div>
         <div class="hero-foot">
             <div class="container has-text-centered">
-                <h1 class="sub-title">
+                <h1 class="project-image-label">
                     Logomark of the revamped brand
                 </h1>
             </div>
@@ -118,7 +214,7 @@
 
                 </div>
                 <div class="column is-8">
-                    <p class="sub-title">
+                    <p class="project-body-text">
                         During this conceptualisation phase, several interviews and surveys were undertaken to help
                         forge and validate the core elements of the redesign.
                     </p>
@@ -128,7 +224,7 @@
         </div>
     </section>
     <section class="hero">
-        <div class="hero-body">
+        <div class="hero-body" style="padding-bottom: 1rem;">
             <div class="columns">
                 <div class="column is-2">
 
@@ -148,7 +244,7 @@
         </div>
         <div class="hero-foot">
             <div class="container has-text-centered">
-                <h1 class="sub-title">
+                <h1 class="project-image-label">
                     Early concepts and user interviews about key emotions evoked by the brand elements.
                 </h1>
             </div>
@@ -164,11 +260,11 @@
 
                 </div>
                 <div class="column is-8">
-                    <p class="sub-title">
+                    <p class="project-body-text">
                         People were asked to describe the emotions or memories that were evoked by the ‘target words’
                         of the identity in development. These were ‘bird’, ‘wings’ and ‘origami’.
                     </p>
-                    <p class="sub-title">
+                    <p class="project-body-text">
                         Over half the people interviewed linked the target words to freedom and independece. Also, 80%
                         of them said that origami reminds them about childhood. This validation of user empathy was
                         taken forward into early sketches and the formulation of the further identity.
@@ -186,10 +282,10 @@
         <div class="hero-body">
             <div class="columns">
                 <div class="column is-2">
-                    <h1 class="is-size-5 has-text-weight-semibold has-text-right has-text-grey">VISION</h1>
+                    <h1 class="section-label has-text-right" style="padding-top: 0.3rem;">VISION</h1>
                 </div>
                 <div class="column is-8">
-                    <p>
+                    <p class="project-body-text">
                         The redesign of the visual identity of Campskil started with one word, Freedom. The freedom to
                         explore. The freedom to learn. The freedom to innovate. At it’s heart, Campskil is a company
                         that enables individuals to develop skills that are not bound by textbooks or curriculum.
@@ -211,7 +307,7 @@
         </div>
         <div class="hero-foot">
             <div class="container has-text-centered">
-                <h1 class="sub-title">
+                <h1 class="project-image-label">
                     Logomark of the revamped brand
                 </h1>
             </div>
@@ -225,15 +321,15 @@
                 <div class="column is-2">
 
                 </div>
-                <div class="column is-6 pads">
-                    <p class="is-italic">
+                <div class="column is-6 pads" style="padding-left: 2rem;">
+                    <p class="is-italic project-body-text" style="color: #9B9B9B;">
                         "The origami shaped “Rising Bird” symbolizes a free mind that is taking off to explore new
                         opportunities that await in the journey of one’s life. The origami style of the logo is
                         reminiscent to our childhood days where by using a 6”x 6” origami sheet we were asked to let
                         our creativity run wild and try to create all sorts of shapes. The thrill of exploring new
                         paths is what motivates this logo.
                     </p>
-                    <p class="is-italic">
+                    <p class="is-italic project-body-text" style="color: #9B9B9B">
                         The period in the word gives it a sense of finality. It signifies that the days of torment are
                         over. Now one can truly fly and explore themselves together with Campskil. It also hints that
                         once you’re with us, there is no need to search further.”
@@ -241,7 +337,7 @@
 
                 </div>
                 <div class="column is-2">
-                    <p class="tag is-dark is-size-7">Quoted from the Campskil Brand
+                    <p class="is-size-7" style="background-color: #1d1d1d; color: white; padding: 0.7rem 0rem 0.7rem 0.7rem; border-radius: 2px;">Quoted from the Campskil Brand
                         Guidelines.</p>
                 </div>
             </div>
@@ -257,9 +353,9 @@
 
                 </div>
                 <div class="column is-8">
-                    <p class="sub-title">
+                    <p class="project-body-text">
                         The various versions of the logomark and its inhabiting elements were designed. These are
-                        designed to be availale for use in a variety of cases.
+                        designed to be available for use in a variety of cases.
                     </p>
                 </div>
 
@@ -304,8 +400,8 @@
         </div>
         <div class="hero-foot">
             <div class="container has-text-centered">
-                <h1 class="sub-title is-size-7">
-                    Different vairants of the logomark.
+                <h1 class="project-image-label">
+                    Different variants of the logomark.
                 </h1>
             </div>
         </div>
@@ -320,7 +416,7 @@
             <div class="container">
                     <div class="columns">
                             <div class="column is-2">
-            
+
                             </div>
                             <div class="column is-8">
                                 <div class="columns is-gapless">
@@ -359,8 +455,8 @@
         </div>
         <div class="hero-foot">
             <div class="container has-text-centered">
-                <h1 class="sub-title is-size-7">
-                        Different vairants of the central bird of the identity.
+                <h1 class="project-image-label">
+                        Different variants of the central bird of the identity.
                 </h1>
             </div>
         </div>
@@ -373,10 +469,10 @@
         <div class="hero-body">
             <div class="columns">
                 <div class="column is-2">
-                    <h1 class="is-size-5 has-text-weight-semibold has-text-right has-text-grey">EXECUTION</h1>
+                    <h1 class="section-label has-text-right" style="padding-top: 0.3rem;">EXECUTION</h1>
                 </div>
                 <div class="column is-8">
-                    <p>
+                    <p class="project-body-text">
                         In addition to the new logotype, the revamped visual was showcased through stationary and
                         merchandise designed for Campskil.
                     </p>
@@ -388,7 +484,7 @@
 
 
     <section class="hero">
-        <div class="hero-body">
+        <div class="hero-body" style="padding-bottom: 1rem;">
             <div class="columns">
                 <div class="column is-2">
 
@@ -401,7 +497,7 @@
         </div>
         <div class="hero-foot">
             <div class="container has-text-centered">
-                <h1 class="sub-title">
+                <h1 class="project-image-label">
                     Updated the brand stationary with the new identity.
                 </h1>
             </div>
@@ -411,7 +507,7 @@
 
 
     <section class="hero">
-        <div class="hero-body">
+        <div class="hero-body" style="padding-bottom: 1rem;">
             <div class="columns">
                 <div class="column is-2">
 
@@ -424,7 +520,7 @@
         </div>
         <div class="hero-foot">
             <div class="container has-text-centered">
-                <h1 class="sub-title">
+                <h1 class="project-image-label">
                         And some sweet tees too!
                 </h1>
             </div>
@@ -435,13 +531,13 @@
             <div class="hero-body">
                 <div class="columns">
                     <div class="column is-2">
-                        
+
                     </div>
                     <div class="column is-8">
-                        <p>
-                                A Brand Guideline document was developed to showcase the thought behind the new logotype and other components of the visual identity. 
+                        <p class="project-body-text">
+                                A Brand Guideline document was developed to showcase the thought behind the new logotype and other components of the visual identity.
                         </p>
-    
+
                     </div>
                 </div>
             </div>
@@ -452,17 +548,17 @@
                 <div class="hero-body">
                     <div class="columns">
                         <div class="column is-2">
-        
+
                         </div>
                         <div class="column is-8">
                             <img src="https://i.imgur.com/hzOiijE.png" alt="">
                         </div>
-        
+
                     </div>
                 </div>
                 <div class="hero-foot">
                     <div class="container has-text-centered">
-                        <h1 class="sub-title">
+                        <h1 class="project-image-label">
                                 The Brand Guideline document was the primary deliverable for the Project
                         </h1>
                     </div>
@@ -472,33 +568,32 @@
 
 
             <section class="hero">
-                    <div class="hero-body">
+                    <div class="hero-body" style="padding-top: 10rem; padding-bottom: 4rem;">
                       <div class="container">
                           <div class="columns">
-                              <div class="column is-2">
-                                  <a href=""><h1 class="has-text-weight-semibold has-text-grey" style="transform:rotate(-90deg); margin: 0 0; padding: 0 0;">back
+                              <div class="column is-1">
+                                  <a href=""><h1 class="has-text-weight-semibold  has-text-grey is-size-7" style="transform:rotate(-90deg); margin: 0 -1rem; padding: 0 1rem; width: 10rem;">back
                                       to top</h1></a>
                               </div>
                               <div class="column is-four-fifths">
                                   <div class="columns has-text-grey">
-                                      <div class="column is-5">
-                                          <p>You can reach out to me at <a class="has-text-grey-darker" href="mailto:">aditya@kundu.co</a>
+                                      <div class="column is-6">
+                                          <p class="is-footer-text">You can reach out to me at <a class="has-text-grey-darker" href="mailto:adikundu1907@gmail.com"><span><nobr>aditya@kundu.co</nobr></span></a>
                                               for any inquiries or to invite me
                                               over for lunch.</p>
-                                          <p>To know more about me, you can find me on <a class="has-text-grey-darker" href=""><strike>Instagram</strike></a>,
-                                              <a class="has-text-grey-darker" href="">LinkedIn</a> and <a class="has-text-grey-darker"
-                                                  href="">Dribble</a>.</p>
+                                          <p class="is-footer-text">To know more about me, you can find me on <a class="footer-link" href="https://www.instagram.com/adikundu/"><span><nobr>Instagram</nobr></span></a>,
+                                              <a class="footer-link" href="https://www.linkedin.com/in/adikundu/"><span><nobr>LinkedIn</nobr></span></a> and <a class="footer-link" href="https://dribbble.com/AdiKundu"><span><nobr>Dribbble</nobr></span></a>.</p>
                                       </div>
                                       <div class="column is-4 is-offset-3">
-                                          <p>
+                                          <p class="project-image-label">
                                               I'm always on the lookout for more knowledge and new experiences.
                                           </p>
-                                          <p>
+                                          <p class="project-image-label">
                                               Have something interesting you'd like me to read or watch ? Anonymously drop the link below
                                               and I'd
                                               be sure to check it out. ^.^
                                           </p>
-                  
+
                                       </div>
                                   </div>
                               </div>
