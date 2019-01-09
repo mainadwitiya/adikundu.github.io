@@ -4,12 +4,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
+    <title>Aditya's Portfolio</title>
     <link rel="stylesheet" href="css/main.css">
   </head>
 
   <style>
 
+  p:hover{
+    cursor: default;
+  }
   .card{
       display: flex;
       flex-direction: column;
@@ -31,11 +34,42 @@
   z-index: 2;
 }
 
+        .project-tag-mod{
+            background: rgba(184, 190, 203, 0.4);
+            margin-bottom: 0.5rem;
+            margin-right: 0.5rem;
+            border-radius: 2px;
+            border-width: 0px;
+            font-weight: bold;
+            color: #ffffff;
+            font-size: 0.5rem;
+            padding: 0.7rem 0.8rem 0.6rem 0.8rem;
+        }
+
+.card-title-text{
+    font-size:1.5rem;
+    color: #1d1d1d;
+    font-family: colfax;
+}
+
+.card-body-text{
+    font-family: colfax;
+    color: #838383;
+    font-size: 0.75rem;
+    line-height: 1.8;
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.card-title-padding-mod{
+    padding-top: 1rem;
+}
+
   </style>
   <body>
-    <div class="Rectangle is-hidden-mobile">
-
-    </div>
+<!--    <div class="Rectangle is-hidden-mobile">
+       ****commenting out this background polygon until I get rest of the page sorted. Fix it up once I've pushed.
+    </div>-->
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
@@ -47,129 +81,121 @@
     </nav>
     <main>
         <section class="container">
-            <div class="column">
+            <div class="column home-padding-mod">
                 <div class="column is-two-fifths is-size-5">
-                    <h1 style="padding:20px 0;">Hi there!</h1>
-                    <p>I'm Kundu. I'm a CS undergrad who practices design. Looking Foward to pursing a graduate degree
-                        in HCL!</p>
-                    <p style="padding:20px 0;"><a href="" class="has-text-grey-lighter">Read more about me</a> here.</p>
+                    <p class="home-header-text">Hi there!</p>
+                    <p class="home-header-text">I'm Kundu. I'm a CS undergrad who practices design. Looking forward to pursing a graduate degree in Human-Computer Interaction!</p>
+                    <p class="home-header-text" style="padding:2rem 0; color: #B8BECB;">Read more about me <a href="" class="footer-link"><span><nobr>here</nobr></span>.</p>
                 </div>
                 <div class="column"></div>
             </div>
         </section>
         <section style="background-color: #1d1d1d;position:relative;">
-
-            <div class="container" style="padding:100px 0;">
-                <div class="columns">
+            <div class="container" style="padding:5rem 0;">
+                <div class="columnn home-padding-mod">
                     <div class="column is-two-fifths">
-                        <p class="is-size-5 has-text-light" style="padding:10px;">Here's a few project that I've worked
-                            on the past few
-                            years.</p>
+                        <p class="home-header-text has-text-white">Here's a few project that I've worked on the past few years.</p>
                     </div>
                 </div>
-                <div class="columns">
-                    <div  style="position:relate;z-index:100" class="column is-5">
-
-
-
+                <div class="columns home-padding-mod">
+                    <div  style="position:relate;z-index:100" class="column is-5 card-margin-mod">
                             <div style="margin: 10px 0;">
-                                    <a class="button is-size-7">Branding</a>
-                                    <a class="button is-size-7">UI</a>
+                                    <a class="button project-tag-mod">BRANDING</a>
+                                    <a class="button project-tag-mod">UI</a>
                             </div>
-                        <div  class="card">
-                            <div class="card-content">
-                                <div class="media">
-
-                                        <p class="title is-size-3 is-size-4-mobile has-text-grey-darker">Aadhaar Tech</p>
-
+                        <div  class="card" style="height: auto; border-radius: 2px;">
+                            <div class="card-content" style="padding-bottom: 1.9rem; padding: 1.7rem;">
+                                <div class="media card-title-padding-mod" >
+                                        <p class="card-title-text is-size-5-mobile" style="margin-bottom: 0rem;">Aadhaar Tech</p>
                                 </div>
 
-                                <div class="content has-text-grey is-size-5 is-size-6-mobile" style="padding: 20px 0;">
-                                    I was required to design the visual identity and digital interfaces of the new
-                                    product division of Labwire Tech Pvt Ltd called Aadhaar Tech, which focuses on
-                                    providing Aadhaar based technological solutions
+                                <div class="content">
+                                    <p class="card-body-text">I was required to design the visual identity and digital interfaces of the new product division of Labwire Tech Pvt Ltd called Aadhaar Tech, which focuses on providing Aadhaar based technological solutions</p>
                                 </div>
 
-                                <a class="has-text-grey-darker" href="">Learn more <span class="icon">
-                                        <i class="fas fa-long-arrow-alt-right"></i>
-                                    </span></a>
+                                <a class="card-body-text" href=""><span><nobr>Learn more</nobr></span>
+                                </a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="column is-5 is-offset-2">
+                    <div class="column is-5 is-offset-1 card-margin-mod">
                             <div style="margin: 10px 0;">
-                                    <a class="button is-size-7">Branding</a>
-                                    <a class="button is-size-7">UI</a>
+                                    <a class="button project-tag-mod">BRANDING</a>
                             </div>
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="media">
-
-                                        <p class="title is-size-3 is-size-4-mobile has-text-grey-darker">CSE Association</p>
+                        <div class="card" style="height: auto; border-radius: 2px;">
+                            <div class="card-content" style="padding-bottom: 1.9rem; padding: 1.7rem;">
+                                <div class="media card-title-padding-mod">
+                                        <p class="card-title-text is-size-5-mobile" style="margin-bottom: 0rem;">CSE Association</p>
                                     </div>
 
-
-                                <div class="content has-text-grey is-size-5 is-size-6-mobile" style="padding: 20px 0;">
-                                    I worked on the development of the visual identity of CSE Association, the student-run association of the department of Computer Science and Engineering SRM IST.
+                                <div class="content">
+                                    <p class="card-body-text"> I worked on the development of the visual identity of CSE Association, the student-run association of the department of Computer Science and Engineering SRM IST.<a class="katwao-apna"> You've found an Easter Egg!</a></p>
                                 </div>
 
-                                <a class="has-text-grey-darker" href="">Learn more <span class="icon">
-                                        <i class="fas fa-long-arrow-alt-right"></i>
-                                    </span></a>
+                                <a class="card-body-text" href=""><span><nobr>Learn more</nobr></span>
+                                </a>
                             </div>
                         </div>
 
                     </div>
                 </div>
-                <div class="columns" style="margin-top:50px;">
-                    <div class="column is-5">
-                        <div style="margin: 10px 0;">
-                                <a class="button is-size-7">Branding</a>
-                                <a class="button is-size-7">UI</a>
-                        </div>
-                        <div class="card">
-                            <div class="card-content">
-                                <div class="media">
-
-                                        <p class="title is-size-3 is-size-4-mobile has-text-grey-darker">Campskil</p>
-
+                <div class="columns home-padding-mod">
+                    <div  style="position:relate;z-index:100" class="column is-5 card-margin-mod">
+                            <div style="margin: 10px 0;">
+                                    <a class="button project-tag-mod">BRANDING</a>
+                            </div>
+                        <div  class="card" style="height: auto; border-radius: 2px;">
+                            <div class="card-content" style="padding-bottom: 1.9rem; padding: 1.7rem;">
+                                <div class="media card-title-padding-mod" >
+                                        <p class="card-title-text is-size-5-mobile" style="margin-bottom: 0rem;">Campskil</p>
                                 </div>
 
-                                <div class="content has-text-grey is-size-5 is-size-6-mobile" style="padding: 20px 0;">
-                                    I was required to design the visual identity for Campskil, an ed-tech startup that focuses on organizing skilll development workshops in colleges and schools.
+                                <div class="content">
+                                    <p class="card-body-text">I was required to design the visual identity for Campskil, an ed-tech startup that focuses on organizing skill develpoment workshops in colleges and schools.</p>
                                 </div>
 
-                                <a class="has-text-grey-darker" href="">Learn more <span class="icon">
-                                        <i class="fas fa-long-arrow-alt-right"></i>
-                                    </span></a>
+                                <a class="card-body-text" href=""><span><nobr>Learn more</nobr></span>
+                                </a>
                             </div>
                         </div>
                     </div>
-                </div>
         </section>
-    </main>
-    <footer class="container" style="padding:50px 0;">
-        <div class="columns has-text-grey">
-            <div class="column is-5">
-                <p>You can reach out to me at <a class="has-text-grey-darker" href="mailto:">aditya@kundu.co</a> for any inquiries or to invite me
-                    over for lunch.</p>
-                <p>To know more about me, you can find me on <a class="has-text-grey-darker" href=""><strike>Instagram</strike></a>, <a class="has-text-grey-darker" href="">LinkedIn</a> and <a class="has-text-grey-darker"
-                        href="">Dribble</a>.</p>
-            </div>
-            <div class="column is-4 is-offset-3">
-                <p>
-                    I'm always on the lookout for more knowledge and new experiences.
-                </p>
-                <p>
-                    Have something interesting you'd like me to read or watch ? Anonymously drop the link below and I'd
-                    be sure to check it out. ^.^
-                </p>
+        <section class="hero">
+                <div class="hero-body" style="padding-top: 10rem; padding-bottom: 4rem;">
+                  <div class="container">
+                      <div class="columns">
+                          <div class="column is-1">
+                              <a href=""><h1 class="has-text-weight-semibold  has-text-grey is-size-7" style="transform:rotate(-90deg); margin: 0 -1rem; padding: 0 1rem; width: 10rem;">back
+                                  to top</h1></a>
+                          </div>
+                          <div class="column is-four-fifths">
+                              <div class="columns has-text-grey">
+                                  <div class="column is-6">
+                                      <p class="is-footer-text">You can reach out to me at <a class="footer-link" href="mailto:adikundu1907@gmail.com"><span><nobr>aditya@kundu.co</nobr></span></a>
+                                          for any inquiries or to invite me
+                                          over for lunch.</p>
+                                      <p class="is-footer-text">To know more about me, you can find me on <a class="footer-link" href="https://www.instagram.com/adikundu/"><span><nobr>Instagram</nobr></span></a>,
+                                          <a class="footer-link" href="https://www.linkedin.com/in/adikundu/"><span><nobr>LinkedIn</nobr></span></a> and <a class="footer-link" href="https://dribbble.com/AdiKundu"><span><nobr>Dribbble</nobr></span></a>.</p>
+                                  </div>
+                                  <div class="column is-4 is-offset-3">
+                                      <p class="project-image-label">
+                                          I'm always on the lookout for more knowledge and new experiences.
+                                      </p>
+                                      <p class="project-image-label">
+                                          Have something interesting you'd like me to read or watch ? Anonymously drop the link below
+                                          and I'd
+                                          be sure to check it out. ^.^
+                                      </p>
 
-            </div>
-        </div>
-    </footer>
-
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </section>
+        </main>
     <div>
 
     </div>

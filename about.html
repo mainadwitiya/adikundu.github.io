@@ -8,52 +8,119 @@
     <link rel="stylesheet" href="css/main.css">
 
   <style>
-      p {
-          margin-bottom: 1em;
-      }
+          p{
+      margin-bottom: 1.25rem;
+    }
+
+        .project-image-label{
+            font-size: 0.75rem;
+            color: #838383;
+            padding-bottom: 3rem;
+        }
 
       #details p {
           margin-bottom: 1.9em;
       }
+
+      .home-header-text{
+        font-size: 1.15rem;
+        font-family: colfax;
+        line-height: 1.6;
+        color: #1d1d1d;
+        width: 27rem;
+      }
+
+      .home-body-text{
+        font-size: 1.15rem;
+        font-family: colfax;
+        line-height: 1.6;
+        color: #1d1d1d;
+        width: 34rem;
+      }
+
+      .is-footer-text{
+            line-height: 1.6;
+            font-family: colfax;
+            color: #B8BECB;
+            font-size: 1.2rem;
+        }
+
+        .footer-link{
+            color: #1d1d1d;
+            cursor: pointer;
+        }
+
+        a:hover{
+          text-decoration: none;
+          color: #1d1d1d;
+        }
+
+
+        span {
+          position: relative;
+          display: inline;
+          cursor: pointer;
+        }
+
+        span:before, span:after {
+          content: '';
+          position: absolute;
+          width: 0%;
+          height: 1px;
+          top: 50%;
+          margin-top: -0.5px;
+          background: #1d1d1d;
+        }
+
+        span:before {
+          left: -2.5px;
+        }
+        span:after {
+          right: 2.5px;
+          background: #1d1d1d;
+          transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+        }
+
+        span:hover:before {
+          background: #1d1d1d;
+          width: 100%;
+          transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+        }
+
+        span:hover:after {
+          background: transparent;
+          width: 100%;
+          transition: 0s;
+        }
   </style>
 </head>
 
 <body>
   <main>
-      <div style="margin: 60px 0;">
+      <div style="margin: 10rem 10rem;">
           <div class="container">
-              <p>Hello there!</p>
-              <p>I'm Kundu.</p>
-              <p>Well that's what everyone ends up calling me anyway. ^.^</p>
-              <p>I am Aditya Kundu. A CS undergrad from SRM IST, Chennai, India.</p>
+              <p class="home-header-text">Hello there!</p>
+              <p class="home-header-text">I'm Kundu.</p>
+              <p class="home-header-text">Well that's what everyone ends up calling me anyway. ^.^</p>
+              <p class="home-header-text">I am Aditya Kundu. A CS undergrad from SRM IST, Chennai, India.</p>
           </div>
       </div>
       <section class="section" style="background: #1d1d1d;">
           <div class="container">
               <div class="columns">
                   <div class="column is-two-thirds has-text-light">
-                      <div style="margin: 50px 0; line-height: 1.6;" id="details">
-                          <p>
-                              This portfolio features a few design projects that I have undertaken for several
-                              college
-                              teams and aspirational startups while pursuing my undergraduate degree in Computer
-                              Science.
+                      <div style="margin: 5rem 6rem;">
+                          <p class="home-body-text has-text-white">
+                              This portfolio features a few design projects that I have undertaken for college teams and aspirational startups while pursuing my undergraduate degree in Computer Science.
                           </p>
-                          <p>
-                              Working within such modest organizations comprising of dedicated individuals using ab
-                              all-hands-on-desk type of approach to things, I was introduced to multitude of
-                              approaches
-                              and technologies as I tried to find my way through them.
+                          <p class="home-body-text has-text-white">
+                              Working within such modest organizations comprising of dedicated individuals using an all-hands-on-deck type of approach to things, I was introduced to a multitude of approaches and technologies as I tried to find my way through them.
                           </p>
-                          <p>
-                              A core part of my design approach is to experience absorbed by the audience. Even the
-                              most
-                              transient of interaction have the potential to excite the user.
+                          <p class="home-body-text has-text-white">
+                              A core part of my design approach is to consider the experience absorbed by the audience. Even the most transient of interactions have the potential to excite the user.
                           </p>
-                          <p>
-                              Those little moments of delight are what truly make a product successful and are
-                              exactly
-                              the details that I have tried to explain within the showcased projects.
+                          <p class="home-body-text has-text-white">
+                              Those little moments of delight are what truly make a product successful; and are exactly the details that I have tried to explain within the showcased projects.
                           </p>
                       </div>
                   </div>
@@ -65,24 +132,24 @@
               </div>
           </div>
       </section>
-      <section class="section"  style="margin: 60px 0;">
+      <section class="section" style="margin: 5rem 10rem;">
           <div class="container">
               <div class="columns">
                   <div class="column is-two-thirds">
-                      <p>
+                      <p class="home-body-text">
                           In addition to my work, this website is meant to exhibit my personality as I percieve it to
                           be. The site is filled with fun and quirky elements and language that I unapologetically
                           use and adhere to.
                       </p>
-                      <p>
+                      <p class="home-body-text">
                           I also absolutly love to play video games. <b><em> Experiencing</em></b> stories rather
                           than reading, listening or hearing them is an irreplacable experience.
                       </p>
-                      <p>
+                      <p class="home-body-text">
                           Following that, the website is also filled with several interactive Easter Eggs that I urge
                           all viewers to discover and enjoy!
                       </p>
-                      <p>
+                      <p class="home-body-text">
                           Sorry for the long read. Have a great day ahead!
                       </p>
                   </div>
@@ -95,31 +162,39 @@
           </div>
       </section>
   </main>
-  <footer>
-      <div class="container">
-          <div class="columns has-text-grey">
-              <div class="column is-5">
-                  <p>You can reach out to me at <a class="has-text-grey-darker" href="mailto:">aditya@kundu.co</a>
-                      for
-                      any inquiries or to invite me
-                      over for lunch.</p>
-                  <p>To know more about me, you can find me on <a class="has-text-grey-darker" href=""><strike>Instagram</strike></a>,
-                      <a class="has-text-grey-darker" href="">LinkedIn</a> and <a class="has-text-grey-darker" href="">Dribble</a>.</p>
-              </div>
-              <div class="column is-4 is-offset-3">
-                  <p>
-                      I'm always on the lookout for more knowledge and new experiences.
-                  </p>
-                  <p>
-                      Have something interesting you'd like me to read or watch ? Anonymously drop the link below and
-                      I'd
-                      be sure to check it out. ^.^
-                  </p>
-
-              </div>
-          </div>
-      </div>
-  </footer>
+            <section class="hero">
+                    <div class="hero-body" style="padding-top: 10rem; padding-bottom: 4rem;">
+                      <div class="container">
+                          <div class="columns">
+                              <div class="column is-1">
+                                  <p class="is-size-7 project-image-label " style=" transform:rotate(-90deg); margin: 0 -1rem; padding: 0 1rem; width: 10rem;"><a href="" style="color: #B8BECB;">Back
+                                      to top</a></p>
+                              </div>
+                              <div class="column is-four-fifths">
+                                  <div class="columns has-text-grey">
+                                      <div class="column is-6">
+                                          <p class="is-footer-text">You can reach out to me at <a class="footer-link" href="mailto:adikundu1907@gmail.com"><span><nobr>aditya@kundu.co</nobr></span></a>
+                                              for any inquiries or to invite me
+                                              over for lunch.</p>
+                                          <p class="is-footer-text">To know more about me, you can find me on <a class="footer-link" href="https://www.instagram.com/adikundu/"><span><nobr>Instagram</nobr></span></a>,
+                                              <a class="footer-link" href="https://www.linkedin.com/in/adikundu/"><span><nobr>LinkedIn</nobr></span></a> and <a class="footer-link" href="https://dribbble.com/AdiKundu"><span><nobr>Dribbble</nobr></span></a>.</p>
+                                      </div>
+                                      <div class="column is-4 is-offset-3">
+                                          <p class="project-image-label">
+                                              I'm always on the lookout for more knowledge and new experiences.
+                                          </p>
+                                          <p class="project-image-label">
+                                              Have something interesting you'd like me to read or watch ? Anonymously drop the link below
+                                              and I'd
+                                              be sure to check it out. ^.^
+                                          </p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </section>
 
 
 
