@@ -3248,7 +3248,7 @@ a.box:active {
     border-radius: 290486px; }
 
 a.tag:hover {
-  text-decoration: underline; }
+}
 
 .title,
 .subtitle {
@@ -6523,3 +6523,153 @@ label.panel-block {
 .footer {
   background-color: whitesmoke;
   padding: 3rem 1.5rem 6rem; }
+
+/*idhar se chalu hai mera mods*/
+
+          p {
+            margin-bottom: 1.25rem;
+        }
+
+        .project-body-text{
+            font-family: colfax;
+            line-height: 1.75rem;
+        }
+
+        .project-hero-title{
+            font-family: colfax;
+            font-size: 2rem;
+            font-weight: medium;
+            margin-bottom: 3rem;
+            color: #ffffff;
+        }
+
+        .project-hero-text{
+            font-family: colfax;
+            font-size: 1rem;
+            color: #B8BECB;
+            padding-bottom: 1rem;
+        }
+
+        .section-label{
+            font-weight: 800;
+            letter-spacing: 0.075rem;
+            font-size: 0.75rem;
+            color: #B8BECB;
+        }
+
+        .project-image-label{
+            font-size: 0.75rem;
+            color: #838383;
+            padding-bottom: 3rem;
+        }
+
+        .pads {
+            border-left-style: solid;
+            border-left-color: #ffcb22;
+        }
+
+        .is-footer-text{
+            line-height: 1.6;
+            font-family: colfax;
+            color: #B8BECB;
+            font-size: 1.15rem;
+        }
+
+        .footer-link{
+            color: #1d1d1d;
+            cursor: pointer;
+        }
+
+        .katwao-apna{
+          color: #ffffff;
+        }
+
+        .katwao-apna:hover{
+          cursor: default;
+          color: #ffffff;
+        }
+
+        .home-header-text{
+          font-size: 1.15rem;
+          font-family: colfax;
+          line-height: 1.6;
+          color: #1d1d1d;
+        }
+
+        .project-component-label{
+          font-size: 0.75rem;
+          color: #838383;
+        }
+
+        span {
+          position: relative;
+          display: inline;
+          cursor: pointer;
+        }
+
+        span:before, span:after {
+          content: '';
+          position: absolute;
+          width: 0%;
+          height: 1px;
+          top: 50%;
+          margin-top: -0.5px;
+          background: #1d1d1d;
+        }
+
+        span:before {
+          left: -2.5px;
+        }
+        span:after {
+          right: 2.5px;
+          background: #1d1d1d;
+          transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+        }
+
+        span:hover:before {
+          background: #1d1d1d;
+          width: 100%;
+          transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+        }
+
+        span:hover:after {
+          background: transparent;
+          width: 100%;
+          transition: 0s;
+        }
+
+        @media screen and (min-width: 800px){
+            .hero-padding-mod{
+                padding-left: 6rem;
+            }
+
+            .section-hero-mod{
+                border-radius: 5px;
+            }
+
+            .container-margin-mod{
+                margin-top: 4rem;
+            }
+
+            .home-padding-mod{
+               padding: 5rem 3rem;
+            }
+        }
+
+        @media screen and (max-width: 800px){
+          .card-margin-mod{
+            margin-left: 2rem;
+            margin-right: 2rem;
+          }
+        }
+
+        a:hover{
+          text-decoration: none;
+          color: #1d1d1d;
+        }
+
+        a{
+          text-decoration: none;
+        }
+
+
