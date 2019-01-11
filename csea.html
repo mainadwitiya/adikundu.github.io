@@ -3,390 +3,436 @@
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CSE Association</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-
     <link rel="stylesheet" href="css/main.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <style>
         p {
-            margin-bottom: 1.2rem;
+            margin-bottom: 1.25rem;
         }
 
-        .carousel-control-prev-icon {
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%235D46E7' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+        .project-body-text{
+            font-family: colfax;
+            line-height: 1.75rem;
         }
 
-        .carousel-control-next-icon {
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%235D46E7' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+        .project-hero-title{
+            font-family: colfax;
+            font-size: 2rem;
+            font-weight: medium;
+            margin-bottom: 3rem;
+            color: #ffffff;
         }
+
+        .project-hero-text{
+            font-family: colfax;
+            font-size: 1rem;
+            color: #B8BECB;
+            padding-bottom: 1rem;
+        }
+
+        .section-label{
+            font-weight: 800;
+            letter-spacing: 0.075rem;
+            font-size: 0.75rem;
+            color: #B8BECB;
+        }
+
+        .project-image-label{
+            font-size: 0.75rem;
+            color: #838383;
+            padding-bottom: 3rem;
+        }
+
+        .pads {
+            border-left-style: solid;
+            border-left-color: #ffcb22;
+        }
+
+        .is-footer-text{
+            line-height: 1.6;
+            font-family: colfax;
+            color: #B8BECB;
+            font-size: 1.2rem;
+        }
+
+        .footer-link{
+            color: #1d1d1d;
+            cursor: pointer;
+        }
+
+        span {
+          position: relative;
+          display: inline;
+          cursor: pointer;
+        }
+
+        span:before, span:after {
+          content: '';
+          position: absolute;
+          width: 0%;
+          height: 1px;
+          top: 50%;
+          margin-top: -0.5px;
+          background: #1d1d1d;
+        }
+
+        span:before {
+          left: -2.5px;
+        }
+        span:after {
+          right: 2.5px;
+          background: #1d1d1d;
+          transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+        }
+
+        span:hover:before {
+          background: #1d1d1d;
+          width: 100%;
+          transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+        }
+
+        span:hover:after {
+          background: transparent;
+          width: 100%;
+          transition: 0s;
+        }
+
+        @media screen and (min-width: 800px){
+            .hero-padding-mod{
+                padding-left: 6rem;
+            }
+
+            .section-hero-mod{
+                border-radius: 5px;
+            }
+
+            .container-margin-mod{
+                margin-top: 4rem;
+            }
+        }
+
     </style>
 </head>
 
 <body>
     <main>
-        <div class="container">
-            <section style="background-image: url('https://i.imgur.com/4JWEIWU.png'); background-position: center; background-blend-mode: multiply;"
-                class="hero is-dark is-medium">
-                <div class="hero-body">
-                    <h1 class="title">CSE Association</h1>
-                    <div>
-                        <p class="subtitle">I worked on the development of the visual identity of CSE Association, the
-                            student-run association of the Department of Computer Science and Engineering, SRM IST.
-                        </p>
-                        <p class="subtitle">Worked on the design and media of the events organized by CSEA in the
-                            academic
-                            year 2017-2018.
-                        </p>
-                    </div>
-                    <div class="hero-foot">
-                        <h1>August 2017 - March 2018</h1>
-                    </div>
-                </div>
-            </section>
-        </div>
+        <div class="container container-margin-mod">
+        <section style="background-image: url('https://i.imgur.com/4JWEIWU.png'); background-position: center; background-blend-mode: multiply; background-color: #838383;" class="hero is-medium section-hero-mod">
+            <div class="hero-padding-mod hero-body" style="padding-top: 4rem; padding-bottom: 4rem;">
 
-        <section class="hero">
-            <div class="hero-body">
-                <div class="columns">
-                    <div class="column is-2">
-                        <h1 class="is-size-5 has-text-weight-semibold has-text-right has-text-grey">GOAL</h1>
-                    </div>
-                    <div class="column is-8">
-                        <p>The task at hand was the development of a fresh, unique brand experience for CSEA that would
-                            establish its visual identity within the campus and improve the reach of the print and
-                            social media.
-                        </p>
-                        <p> A new identity would also help it stand out from other departmental associations and clubs
-                            that exist within the institute.
-                        </p>
-                    </div>
-                </div>
+                <h1 class="project-hero-title">CSE Association</h1>
+                <p class="project-hero-text is-size-6-touch">I worked on the development of the visual identity of CSE Association, the student-run association of the Department of Computer Science and Engineering, SRM IST.</p>
+                <p class="project-hero-text is-size-6-touch">Worked on the design and media of the events organized by CSEA in the academic year 2017-2018</p>
+                <h1 class="project-hero-text" style="margin-top:6rem;">August 2017 - March 2018</h1>
             </div>
         </section>
+    </div>
 
-        <section class="hero">
-            <div class="hero-body">
-                <div class="container has-text-centered">
+    <section class="hero">
+        <div class="hero-body">
+            <div class="columns">
+                <div class="column is-2">
+                    <h1 class="has-text-right section-label" style="padding-top: 0.3rem;">ROLE</h1>
+                </div>
+                <div class="column is-8">
+                    <ul>
+                        <li class="project-body-text">- Development of the revised logo and a visual identity system. </li>
+                        <li class="project-body-text">- Designed additional brand elements such as ID cards, lanyards and social media deliverables. </li>
+                        <li class="project-body-text">- Led a team of 80+ undergraduate students and organized 4 events such as fests and competitions in our campus.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="columns">
+                <div class="column is-2">
+                    <h1 class="has-text-right section-label" style="padding-top: 0.3rem;">GOAL</h1>
+                </div>
+                <div class="column is-8">
+                    <p class="project-body-text">The task at hand was the development of a fresh, unique brand experience for CSEA that would establish its visual identity within the campus and improve the reach of the print and social media. 
+                    </p>
+                    <p class="project-body-text">A new identity would also help it stand out from other departmental associations and clubs that exist within the institute. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--Images in grid-->
+    <section class="hero">
+        <div class="hero-body">
+            <div class="columns">
+                <div class="column is-8 is-offset-2">
+                    
+                <div class="columns">
+                    <div class="column has-text-centered">
+                      <img src="https://bulma.io/images/placeholders/128x128.png">
+                    </div>
+                    <div class="column has-text-centered">
+                      <img src="https://bulma.io/images/placeholders/128x128.png">
+                    </div>
+                    <div class="column has-text-centered">
+                      <img src="https://bulma.io/images/placeholders/128x128.png">
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="columns">
+                <div class="column is-8 is-offset-2">
+                    <p class="project-body-text">Most of these departmental associations’ logos lack a certain sense of originality. They conform to a standard template followed by amateurly executed ‘tech’ logos. Furthermore, the variety of visual media produced by the organisations were not coherent with the logos and their respective themes.
+                    </p>
+                    <p class="project-body-text">Another notable insight was that these logos often tend to highlight a certain element of the department’s study, for example, microprocessor circuits.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- VISION SECTION -->
+    <section class="hero">
+        <div class="hero-body">
+            <div class="columns">
+                <div class="column is-2"><h1 class="has-text-right section-label" style="padding-top: 0.3rem;">VISION</h1></div>
+                <div class="column is-8">
+                    <p class="project-body-text">But what about <strong>Computer Science?</strong></p>
+                    <p class="project-body-text">After initial interviews of my fellow CSE undergrads, their message became clear stating that Computer Science, as a field, is too expansive to be represented by one visual motif. Hence, a pattern library was created to be the essence of the identity.</p>
+                    <p class="project-body-text">Each core pattern of this identity represents a certain part of Computer Science; which is present in our curriculum and taught on a daily basis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="columns">
+                <div class="column is-8 is-offset-2">
+                   <div class="columns">
+                     <div class="column is-4 is-offset-1">
+                       <div><h1>Algorithms</h1> <img src="https://imgur.com/nW5dg6Q.png" alt=""></div>
+                       <div><h1>Networking</h1> <img src="https://imgur.com/qM7Cppb.png" alt=""></div>
+                       <div><h1>Primary Logomark</h1> <img src="https://imgur.com/QAVlDCY.png" alt=""></div>
+                    </div>
+                    <div class="column is-4 is-offset-1">
+                        <div><h1>Data Structures</h1><img src="https://imgur.com/q1u2l4E.png" alt=""></div>
+                        <div><h1>Design</h1><img src="https://imgur.com/CGN0tKS.png" alt=""></div>
+                        <div><h1>Logo</h1><img src="https://imgur.com/ILQby9f.png" alt=""></div>
+                     </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="columns">
+                <div class="column is-8 is-offset-2">
+                    
+                   <!-- Paragraphs-->
+                   <p class="project-body-text">This dynamic pattern library also serves as the reminder of continuous change in the organisation. As seniors graduate and freshermen join CSEA each year, the core team of the organisation is created anew annually.
+                    </p>
+                    <p class="project-body-text">This is also parallel to the dynamism of CS as an academic field. Core curriculum subjects such as Data Structures and Algorithms that are being taught now, will be accompanied or possibly even subsumed by electives such as Machine Learning and Artificial Intelligence in the upcoming years. The core patterns  of the brand system can be supplanted by those designed by the newer generation of students which represent their fields of interest.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--EXECUTION SECTION -->
+    <section class="hero">
+        <div class="hero-body">
+            <div class="columns">
+                <div class="column is-2"><h1 class="has-text-right section-label" style="padding-top: 0.3rem;">EXECUTION</h1></div>
+                <div class="column is-8"><p class="project-body-text">A few applications of this visual identity system have been showcased in the upcoming pages.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="columns">
+                <div class="column is-8 is-offset-2">
+                        <div class="columns">
+                                <div class="column is-5">
+                                  <div>
+                                      <img src="https://imgur.com/mvQ6Ghw.png" alt="">
+                                      <p class="project-image-label has-text-centered">Each domain within the team had unique representative pictures as a result of the dynamic brand.</p>
+                                    </div>
+                                  <div><img src="https://imgur.com/J6SqPbn.png" alt="">
+                                    <p class="project-image-label has has-text-centered">These badges were given to every single team member, organizer and volunteer. Such small experiences helps drive engagement within the team.
+                                        </p>    
+                                </div>
+                               </div>
+                               <div class="column is-7">
+                                   <div>
+                                       <img src="https://imgur.com/Is1jZLB.png" width="100%" alt="">
+                                       <p class="project-image-label has-text-centered">Event ID card design example.
+                                        </p>
+                                    </div>
+                                   
+                                </div>
+                              </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="columns">
+                <div class="column is-8 is-offset-2">
                     <div class="columns">
-                        <div class="column is-2"></div>
-                        <div class="column is-8">
-                            <div class="columns">
-                                <div class="column">
-                                    <img src="https://bulma.io/images/placeholders/128x128.png">
-                                </div>
-                                <div class="column">
-                                    <img src="https://bulma.io/images/placeholders/128x128.png">
-                                </div>
-                                <div class="column">
-                                    <img src="https://bulma.io/images/placeholders/128x128.png">
-                                </div>
-                                <div class="column">
-                                    <img src="https://bulma.io/images/placeholders/128x128.png">
-                                </div>
-                            </div>
+                        <div class="column is-5 is-offset-1">
+                            <img src="https://imgur.com/18ygUPq.png" alt="">
+                        </div>
+                        <div class="column is-5">
+                            <img src="https://imgur.com/TQdZ9WX.png" alt="">
                         </div>
                     </div>
-
+                            <p class="project-image-label has-text-centered">Design of the ID Card that was provided to all domain heads and the secretarial elects.
+                                </p>
                 </div>
             </div>
-            <div class="hero-foot">
-                <div class="container has-text-centered">
-                    <h1 class="sub-title">
-                        Various logos of the competitions.
-                    </h1>
-                </div>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="hero">
-            <div class="hero-body">
+    <section>
+        <div class="hero">
+                <div class="hero-body">
+                        <div class="container">
+                            <img src="https://imgur.com/NsS8Z5z.png" alt="">
+                            <p class="project-image-label has-text-centered">The final match of the FIFA 18 tournament was quite an affair. Even a few of the organizing team members had to sit down and watch the thrilling contest.
+                                </p>
+                        </div>
+                    </div>
+        </div>
+        <div class="hero">
+                <div class="hero-body">
+                        <div class="container">
+                            <img src="https://imgur.com/fQoNmz5.png" alt="">
+                            <p class="project-image-label has-text-centered">A student from the audience during a public roadshow wowed everyone with his beatboxing skill. You know the beat’s fire when it ellicits such a response from others!
+                                </p>
+                        </div>
+                    </div>
+        </div>
+        <div class="hero">
+                <div class="hero-body">
+                        <div class="container">
+                            <img src="https://imgur.com/6Mp5WJz.png" width="100%" alt="">
+                            <p class="project-image-label has-text-centered">A participant of Game On ’17 with his Event ID card.
+                                </p>
+                        </div>
+                    </div>
+        </div>
+    </section>
 
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container">
                 <div class="columns">
-                    <div class="column is-2">
-
-                    </div>
-                    <div class="column is-8">
-                        <p class="sub-title">
-                            Most of these departmental associations’ logos lack a certain sense of originality. They
-                            conform to a standard template followed by amateurly executed ‘tech’ logos- sharp edges,
-                            blue overlays and digital circuitry.
-                        </p>
+                    <div class="column is-6">
                         <p>
-                            They often highlight a certain element of the department’s study, like microprocessor
-                            circuits.
+                                The following results were observed after the implementation of the new visual identity:
                         </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="hero">
-            <div class="hero-body">
-                <div class="columns">
-                    <div class="column is-2">
-                        <h1 class="is-size-5 has-text-weight-semibold has-text-right has-text-grey">VISION</h1>
-                    </div>
-                    <div class="column is-8">
-                        <p>
-                            But what about <strong>Computer Science ?</strong>
-                        </p>
-                        <img src="https://bulma.io/images/placeholders/800x480.png" width="100%" alt="">
-
-                    </div>
-                </div>
-            </div>
-            <div class="hero-foot">
-                <div class="container has-text-centered">
-                    <h1 class="sub-title">
-                        Updated the brand stationary with the new identity.
-                    </h1>
-                </div>
-            </div>
-
-        </section>
-
-
-        <section class="hero">
-            <div class="hero-body">
-                <div class="columns">
-                    <div class="column is-2">
-                    </div>
-                    <div class="column is-8">
-                        <p>
-                            After initial interviews of my fellow CSE undergrads, their message became clear stating
-                            that Computer Science, as a field, is too expansive to be represented by one visual motif.
-                            Hence, a pattern library was created to be the essence of the identity.
-                        </p>
-                        <p>
-                            Each core pattern of this identity represents a certain part of Computer Science; which is
-                            present in our curriculum and taught on a daily basis.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="hero">
-            <div class="hero-body">
-                <div class="columns">
-                    <div class="column is-2"></div>
-                    <div class="column is-8">
                         <div class="hero">
                             <div class="hero-body">
-                                <div class="columns is-variable is-8">
-                                    <div class="column is-6">
-                                        <h1 class="subtitle">Algorithms</h1>
-                                        <img src="https://imgur.com/nW5dg6Q.png" alt="">
-                                    </div>
-                                    <div class="column is-6">
-                                        <h1 class="subtitle">Data Structures</h1>
-                                        <img src="https://imgur.com/q1u2l4E.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="columns is-variable is-8">
-                                    <div class="column is-6">
-                                        <h1 class="subtitle">Networking</h1>
-                                        <img src="https://imgur.com/qM7Cppb.png" alt="">
-                                    </div>
-                                    <div class="column is-6">
-                                        <h1 class="subtitle">Design</h1>
-                                        <img src="https://imgur.com/CGN0tKS.png" alt="">
-                                    </div>
-                                </div>
+                                <p>- A <strong>growth of 40% on the likes</strong> of the Facebook page of CSEA over the academic year 2017-18.
+                                    </p>
+                            </div>
+                        </div>
+                        <div class="hero">
+                            <div class="hero-body">
+                                <p>- This academic year’s events have received an approximate total of <strong>840 participants</strong> across 4 different competitions and fests.
+                                    </p>
+                            </div>
+                        </div>
+                        <div class="hero">
+                            <div class="hero-body">
+                                <p>- The revamped branding allowed for an <strong>increase in sponsorship tie-ups with companies such as McDonald’s, Red Bull and HackerRank</strong>; drastically improving over organizations  in the previous year.
+                                    </p>
+                            </div>
+                        </div>
+                        <div class="hero">
+                            <div class="hero-body">
+                                <p>- The ID card <strong>lanyard design proved to be massively popular</strong> amongst students and was successful in creating the ‘marketing hype’ that it was designed for.
+
+                                    </p>
+                            </div>
+                        </div>
+                        <div class="hero">
+                            <div class="hero-body">
+                                <p>In conclusion, through systemic design strategies, the Association was able to form a strong emotional connection with its participants and other students in the campus.
+
+                                    </p>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="hero">
-            <div class="hero-body">
-                <div class="columns">
-                    <div class="column is-2">
-                    </div>
-                    <div class="column is-8">
-                        <p>
-                            This dynamic pattern library also serves as the reminder of continuous change in the
-                            organisation. As seniors graduate and freshermen join CSEA each year, the core team of the
-                            organisation is created anew annually.
-                        </p>
-                        <p>
-                            This is also parallel to the dynamism of CS as an academic field itself. Core curriculum
-                            subjects such as Data Structures and Algorithms, will be accompanied by electives such as
-                            Machine Learning and Artificial Intelligence in the upcoming years. These core patterns can
-                            be supplanted by those designed by the newer generation of students which represent their
-                            fields of interest.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-        <section class="hero">
-            <div class="hero-body">
-                <div class="columns">
-                    <div class="column is-2">
-                        <h1 class="is-size-5 has-text-weight-semibold has-text-right has-text-grey">EXECUTION</h1>
-                    </div>
-                    <div class="column is-8">
-                        <p>
-                            In addition to the new logotype, the revamped visual was showcased through stationary and
-                            merchandise designed for Campskil.
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="hero">
-            <div class="hero-body">
-                <div class="conatiner">
-                    <div class="colums">
-                        <div class="column is-8 is-offset-2">
-                            <div id="carouselExampleControls-1" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item">
-                                        <img class="d-block w-100" src="https://imgur.com/WE8Sqcv.png" alt="First slide">
-                                    </div>
-                                    <div class="carousel-item active carousel-item-left">
-                                        <img class="d-block w-100" src="https://imgur.com/vRghP3Z.png" alt="Second slide">
-                                    </div>
-                                    <div class="carousel-item carousel-item-next carousel-item-left">
-                                        <img class="d-block w-100" src="https://imgur.com/jHbkK0x.png" alt="Third slide">
-                                    </div>
-                                </div>
-                                <a class="carousel-control-prev" href="#carouselExampleControls-1" role="button"
-                                    data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#carouselExampleControls-1" role="button"
-                                    data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </div>
-                            <div class="hero-foot">
-                                <p class="has-text-centered">The API Dashboard of Aadhaar Tech.</p>
-                            </div>
+                    <div class="column is-3 is-offset-2">
+                        <div class="hero">
+                            <img src="https://imgur.com/M6GQqty.png" alt="">
+                            <p class="project-image-label has-text-centered">The lanyard was the most iconic element of the brand.
+                                </p>
+                        </div>
+                        <div class="hero">
+                            <img src="https://imgur.com/h1kX7t1.png" width="100%" alt="">
+                            <p class="project-image-label has-text-centered">The branding cemented the image of a revamped Association.
+                                </p>
                         </div>
                     </div>
                 </div>
             </div>
-
-        </section>
-
-        <section class="hero is-dark">
-            <div class="hero-body">
-                <div class="container">
-                    <div class="columns">
-                        <div class="column is-6">
-                            <p>
-
-                                The following results were observed after the implementation of the new visual
-                                identity:
-                            </p>
-
-                            <ul>
-                                <li>
-                                        - A growth of 40% on the likes of the Facebook page of CSEA over the academic year
-                                        2017-18.
-                                </li>
-                                <li>
-                                        - This academic year’s events have received an approximate total of 840 participants
-                                        across 4 different competitions and fests.
-                                </li>
-                                <li>
-                                        - The revamped branding allowed for an increase in sponsorship tie-ups with companies
-                                        such as McDonald’s, Red Bull and HackerRank; drastically improving over organizations
-                                        in the previous year.
-                                </li>
-                                <li>
-                                        - The ID card lanyard design proved to be massively popular amongst students and was
-                                        successful in creating the ‘marketing hype’ that it was designed for.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="column is-4 is-offset-2">
-                            <img src="https://imgur.com/M6GQqty.png" alt="lanyard hero">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
+    </section>
 
 
-        <section class="hero">
-                <div class="hero-body">
-                  <div class="container">
-                      <div class="columns">
-                          <div class="column is-2">
-                              <a href=""><h1 class="has-text-weight-semibold has-text-grey  is-hidden-mobile" style="transform:rotate(-90deg); margin: 0 0; padding: 0 0;">back
-                                  to top</h1></a>
-                          </div>
-                          <div class="column is-four-fifths">
-                              <div class="columns has-text-grey">
-                                  <div class="column is-5">
-                                      <p>You can reach out to me at <a class="has-text-grey-darker" href="mailto:">aditya@kundu.co</a>
-                                          for any inquiries or to invite me
-                                          over for lunch.</p>
-                                      <p>To know more about me, you can find me on <a class="has-text-grey-darker" href=""><strike>Instagram</strike></a>,
-                                          <a class="has-text-grey-darker" href="">LinkedIn</a> and <a class="has-text-grey-darker"
-                                              href="">Dribble</a>.</p>
-                                  </div>
-                                  <div class="column is-4 is-offset-3">
-                                      <p>
-                                          I'm always on the lookout for more knowledge and new experiences.
-                                      </p>
-                                      <p>
-                                          Have something interesting you'd like me to read or watch ? Anonymously drop the link below
-                                          and I'd
-                                          be sure to check it out. ^.^
-                                      </p>
-              
-                                  </div>
+    <section class="hero">
+            <div class="hero-body" style="padding-top: 10rem; padding-bottom: 4rem;">
+              <div class="container">
+                  <div class="columns">
+                      <div class="column is-1">
+                          <a href=""><h1 class="has-text-weight-semibold  has-text-grey is-size-7  is-hidden-mobile" style="transform:rotate(-90deg); margin: 0 -1rem; padding: 0 1rem; width: 10rem;">back
+                              to top</h1></a>
+                      </div>
+                      <div class="column is-four-fifths">
+                          <div class="columns has-text-grey">
+                              <div class="column is-6">
+                                  <p class="is-footer-text">You can reach out to me at <a class="has-text-grey-darker" href="mailto:adikundu1907@gmail.com"><span><nobr>aditya@kundu.co</nobr></span></a>
+                                      for any inquiries or to invite me
+                                      over for lunch.</p>
+                                  <p class="is-footer-text">To know more about me, you can find me on <a class="footer-link" href="https://www.instagram.com/adikundu/"><span><nobr>Instagram</nobr></span></a>,
+                                      <a class="footer-link" href="https://www.linkedin.com/in/adikundu/"><span><nobr>LinkedIn</nobr></span></a> and <a class="footer-link" href="https://dribbble.com/AdiKundu"><span><nobr>Dribbble</nobr></span></a>.</p>
+                              </div>
+                              <div class="column is-4 is-offset-3">
+                                  <p class="project-image-label">
+                                      I'm always on the lookout for more knowledge and new experiences.
+                                  </p>
+                                  <p class="project-image-label">
+                                      Have something interesting you'd like me to read or watch ? Anonymously drop the link below
+                                      and I'd
+                                      be sure to check it out. ^.^
+                                  </p>
                               </div>
                           </div>
                       </div>
                   </div>
-                </div>
-              </section>
-    </main>
-
-
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-
-    <script type="text/javascript" src="lib/main.js"></script>
-    <script>
-        $(document).ready(function () {
-            var carousels = bulmaCarousel.attach(); // carousels now contains an array of all Carousel instances
-        });
-    </script>
-    <script type="text/javascript">
-
-        $('#carouselExampleControls-1').carousel({
-            interval: 2000,
-            wrap: true,
-            keyboard: true
-        })
-
-
-    </script>
+              </div>
+            </div>
+          </section>
+</main>
 </body>
 
 </html>
