@@ -93,6 +93,11 @@ z-index: 2;
     padding-top: 1rem;
 }
 
+.card-styling{
+  box-shadow: 0px 23px 109px -44px rgba(29,29,29,1);
+  padding: 1.7rem;
+  padding-bottom: 1.9rem;
+}
 
   </style>
   <body>
@@ -130,12 +135,18 @@ z-index: 2;
     <main>
         <section class="container">
             <div class="column home-padding-mod">
-                <div class="column is-two-fifths is-size-5 body-text-padding-mod">
-                    <p class="home-header-text">Hi there!</p>
-                    <p class="home-header-text">I'm Kundu. I'm a CS undergrad who practices design. Looking forward to pursing a graduate degree in Human-Computer Interaction!</p>
-                    <p class="home-header-text" style="padding:2rem 0; color: #B8BECB;">Read more about me <a href="" class="footer-link"><span><nobr>here</nobr></span></a></p>
+                <div class="columns" style="margin-left: 0rem;">
+                  <div class="column is-two-fifths is-size-5 body-text-padding-mod">
+                      <p class="home-header-text">Hi there!</p>
+                      <p class="home-header-text">I'm Kundu. I'm a CS undergrad who practices design. Looking forward to pursing a graduate degree in Human-Computer Interaction!</p>
+                      <p class="home-header-text" style="padding:2rem 0; color: #B8BECB;">Read more about me <a href="https://adikundu.github.io/about" class="footer-link"><span><nobr>here</nobr></span></a></p>
+                  </div>
+                  <div class="column is-2 is-offset-3 is-hidden-mobile">
+                    <figure class="image is-4by5" style="width: 15rem; height: 15rem; margin-top: -2rem;">
+                      <img src="css/assets/lilWhale.png">
+                    </figure>
+                  </div>
                 </div>
-            </div>
         </section>
         <section style="background-color: #1d1d1d; position:relative;" id="project-section">
             <div class="container" style="padding:3rem 0;">
@@ -145,13 +156,13 @@ z-index: 2;
                     </div>
                 </div>
                 <div class="columns home-padding-mod">
-                    <div  style="position:relate;z-index:100" class="column is-4 card-margin-mod">
+                    <div  style="position:relate;z-index:100" class="column is-5 card-margin-mod">
                             <div style="margin: 10px 0;">
                                     <a class="button project-tag-mod">BRANDING</a>
                                     <a class="button project-tag-mod">UI</a>
                             </div>
-                        <div  class="card" style="height: auto; border-radius: 2px;">
-                            <div class="card-content" style="padding-bottom: 1.9rem; padding: 1.7rem;">
+                        <div  class="card" style="height: auto; border-radius: 3px; box-shadow: 0px 23px 109px -44px rgba(29,29,29,1);">
+                            <div class="card-content card-styling">
                                 <div class="media card-title-padding-mod" >
                                         <p class="card-title-text is-size-5-mobile" style="margin-bottom: 0rem;">Aadhaar Tech</p>
                                 </div>
@@ -166,12 +177,12 @@ z-index: 2;
                         </div>
                     </div>
 
-                    <div style="position:relate;z-index:100"  class="column is-4 is-offset-2 card-margin-mod">
+                    <div style="position:relate;z-index:100"  class="column is-5 is-offset-2 card-margin-mod">
                             <div style="margin: 10px 0;">
                                     <a class="button project-tag-mod">BRANDING</a>
                             </div>
-                        <div class="card" style="height: auto; border-radius: 2px;">
-                            <div class="card-content" style="padding-bottom: 1.9rem; padding: 1.7rem;">
+                        <div class="card" style="height: auto; border-radius: 3px; box-shadow: 0px 23px 109px -44px rgba(29,29,29,1);">
+                            <div class="card-content card-styling">
                                 <div class="media card-title-padding-mod">
                                         <p class="card-title-text is-size-5-mobile" style="margin-bottom: 0rem;">CSE Association</p>
                                     </div>
@@ -188,12 +199,12 @@ z-index: 2;
                     </div>
                 </div>
                 <div class="columns home-padding-mod">
-                    <div  style="position:relate;z-index:100" class="column is-4 card-margin-mod">
+                    <div  style="position:relate;z-index:100" class="column is-5 card-margin-mod">
                             <div style="margin: 10px 0;">
                                     <a class="button project-tag-mod">BRANDING</a>
                             </div>
-                        <div  class="card" style="height: auto; border-radius: 2px;">
-                            <div class="card-content" style="padding-bottom: 1.9rem; padding: 1.7rem;">
+                        <div  class="card" style="height: auto; border-radius: 3px; box-shadow: 0px 23px 109px -44px rgba(29,29,29,1);">
+                            <div class="card-content card-styling">
                                 <div class="media card-title-padding-mod" >
                                         <p class="card-title-text is-size-5-mobile" style="margin-bottom: 0rem;">Campskil</p>
                                 </div>
@@ -212,10 +223,6 @@ z-index: 2;
                 <div class="hero-body">
                   <div class="container">
                       <div class="columns footer-padding-mod">
-                          <div class="column is-1">
-                              <a href=""><h1 class="has-text-weight-semibold  has-text-grey is-size-7  is-hidden-mobile" style="transform:rotate(-90deg); margin: 0 -1rem; padding: 0 1rem; width: 10rem;">back
-                                  to top</h1></a>
-                          </div>
                           <div class="column is-four-fifths body-text-padding-mod">
                               <div class="columns has-text-grey">
                                   <div class="column is-7">
@@ -226,7 +233,7 @@ z-index: 2;
                                           <a class="footer-link" href="https://www.linkedin.com/in/adikundu/"><span><nobr>LinkedIn</nobr></span></a>.</p>
                                   </div>
                                   <div class="column is-4 is-offset-3">
-                                      <p class="project-image-label" style="padding-top: 5rem;">
+                                      <p class="project-image-label credits-padding-mod">
                                           Designed and developed by the Adi bois lol.
                                       </p>
                                   </div>
