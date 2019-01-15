@@ -5,10 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Aditya's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/fonts/style.css">
     <link rel="stylesheet" href="css/main.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
   </head>
 
   <style>
@@ -25,17 +23,7 @@
       transform: rotate(90deg);
       margin: 10px;
   }
-  .Rectangle {
-  width: 800px;
-  height: 500px;
-  position: absolute;
-  top:500px;
-  left: 50px;
-  border-radius: 4px;
-  background-image: linear-gradient(to left, #8066dc, #63299f);
-  clip-path: polygon(0 0, 100% 0, 62% 100%, 0 90%);
-  z-index: 2;
-}
+
 
         .project-tag-mod{
             background: rgba(184, 190, 203, 0.4);
@@ -52,11 +40,11 @@
 .card-title-text{
     font-size:1.5rem;
     color: #1d1d1d;
-    font-family: colfax;
+    font-family: Colfax Regular;
 }
 
 .card-body-text{
-    font-family: colfax;
+    font-family: Colfax Regular;
     color: #838383;
     font-size: 0.75rem;
     line-height: 1.8;
@@ -68,65 +56,93 @@
     padding-top: 1rem;
 }
 
+
+
+.Rectangle {
+width: 478.15px;
+height: 425px;
+position: absolute;
+top:850px;
+left: 100px;
+border-radius: 4px;
+background-image: linear-gradient(to left, #8066dc, #63299f);
+clip-path: polygon(0 0, 100% 0, 62% 100%, 0 90%);
+z-index: 2;
+}
+.Rectangle1 {
+width: 500px;
+height: 400px;
+position: absolute;
+top:850px;
+left: 700px;
+border-radius: 4px;
+background-image: -webkit-linear-gradient(#7cedf5, #4687e7);
+background-image: -o-linear-gradient(#7cedf5, #4687e7);
+background-image: linear-gradient(#7cedf5, #4687e7);
+z-index: 2;
+clip-path: polygon(5% 24%, 100% 0, 100% 100%, 0 72%);
+}
+
+.Rectangle2 {
+width: 531.25px;
+  height: 425px;
+position: absolute;
+top:1299px;
+left: 100px;
+border-radius: 4px;
+background-image: linear-gradient(to top, #ec9d49, #f7d473);
+clip-path: polygon(0 26%, 100% 0, 83% 100%, 6% 84%);
+
+z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
   </style>
   <body>
+
+
+
+
 <!--    <div class="Rectangle is-hidden-mobile">
        ****commenting out this background polygon until I get rest of the page sorted. Fix it up once I've pushed.
     </div>-->
-    <section>
-      <nav class="navbar" role="navigation" aria-label="main navigation">
-
-    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-
-  <div id="navbarBasicExample" class="navbar-menu">
-
-
-    <div class="navbar-end">
-      <a class="navbar-item">
-        Home
-      </a>
-      <a class="navbar-item">
-        Csea
-      </a>
-      <a class="navbar-item">
-        Campskill
-      </a>
-      <a class="navbar-item">
-        Adhaar
-      </a>
-      <a class="navbar-item">
-        About
-      </a>
-
-    </div>
-  </div>
-</nav>
-    </section>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+    </nav>
     <main>
         <section class="container">
             <div class="column home-padding-mod">
-                <div class="column is-two-fifths is-size-5">
+                <div class="column is-two-fifths is-size-5 body-text-padding-mod">
                     <p class="home-header-text">Hi there!</p>
                     <p class="home-header-text">I'm Kundu. I'm a CS undergrad who practices design. Looking forward to pursing a graduate degree in Human-Computer Interaction!</p>
-                    <p class="home-header-text" style="padding:2rem 0; color: #B8BECB;">Read more about me <a href="" class="footer-link"><span><nobr>here</nobr></span>.</p>
+                    <p class="home-header-text" style="padding:2rem 0; color: #B8BECB;">Read more about me <a href="" class="footer-link"><span><nobr>here</nobr></span></a></p>
                 </div>
-                <div class="column"></div>
             </div>
         </section>
-        <section style="background-color: #1d1d1d;position:relative;">
-            <div class="container" style="padding:5rem 0;">
+        <section style="background-color: #1d1d1d; position:relative;">
+            <div class="container" style="padding:3rem 0;">
                 <div class="columnn home-padding-mod">
-                    <div class="column is-two-fifths">
+                    <div class="column is-two-fifths body-text-padding-mod jugaad">
                         <p class="home-header-text has-text-white">Here's a few project that I've worked on the past few years.</p>
                     </div>
                 </div>
                 <div class="columns home-padding-mod">
-                    <div  style="position:relate;z-index:100" class="column is-5 card-margin-mod">
+                    <div  style="position:relate;z-index:100" class="column is-4 card-margin-mod">
                             <div style="margin: 10px 0;">
                                     <a class="button project-tag-mod">BRANDING</a>
                                     <a class="button project-tag-mod">UI</a>
@@ -147,7 +163,7 @@
                         </div>
                     </div>
 
-                    <div class="column is-5 is-offset-1 card-margin-mod">
+                    <div style="position:relate;z-index:100" class="column is-4 is-offset-2 card-margin-mod">
                             <div style="margin: 10px 0;">
                                     <a class="button project-tag-mod">BRANDING</a>
                             </div>
@@ -190,14 +206,14 @@
                     </div>
         </section>
         <section class="hero">
-                <div class="hero-body" style="padding-top: 10rem; padding-bottom: 4rem;">
+                <div class="hero-body">
                   <div class="container">
-                      <div class="columns">
+                      <div class="columns footer-padding-mod">
                           <div class="column is-1">
                               <a href=""><h1 class="has-text-weight-semibold  has-text-grey is-size-7  is-hidden-mobile" style="transform:rotate(-90deg); margin: 0 -1rem; padding: 0 1rem; width: 10rem;">back
                                   to top</h1></a>
                           </div>
-                          <div class="column is-four-fifths">
+                          <div class="column is-four-fifths body-text-padding-mod">
                               <div class="columns has-text-grey">
                                   <div class="column is-6">
                                       <p class="is-footer-text">You can reach out to me at <a class="footer-link" href="mailto:adikundu1907@gmail.com"><span><nobr>aditya@kundu.co</nobr></span></a>
@@ -206,16 +222,10 @@
                                       <p class="is-footer-text">To know more about me, you can find me on <a class="footer-link" href="https://www.instagram.com/adikundu/"><span><nobr>Instagram</nobr></span></a>,
                                           <a class="footer-link" href="https://www.linkedin.com/in/adikundu/"><span><nobr>LinkedIn</nobr></span></a> and <a class="footer-link" href="https://dribbble.com/AdiKundu"><span><nobr>Dribbble</nobr></span></a>.</p>
                                   </div>
-                                  <div class="column is-4 is-offset-3">
-                                      <p class="project-image-label">
-                                          I'm always on the lookout for more knowledge and new experiences.
+                                  <div class="column is-4 is-offset-4">
+                                      <p class="project-image-label" style="padding-top: 5rem;">
+                                          Designed and developed by the Adi bois lol.
                                       </p>
-                                      <p class="project-image-label">
-                                          Have something interesting you'd like me to read or watch ? Anonymously drop the link below
-                                          and I'd
-                                          be sure to check it out. ^.^
-                                      </p>
-
                                   </div>
                               </div>
                           </div>
@@ -224,13 +234,17 @@
                 </div>
               </section>
         </main>
-    <div>
+        <div class="Rectangle is-hidden-mobile">
 
-    </div>
+         </div>
+
+         <div class="Rectangle1 is-hidden-mobile">
+
+          </div>
+          <div class="Rectangle2 is-hidden-mobile">
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <script type="text/javascript" src="lib/main.js"></script>
-
   </body>
 </html>
