@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#1d1d1d">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/fonts/style.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <title>Aadhaar</title>
+    <title>Aadhaar Tech</title>
 
   <style>
      .project-body-text{
@@ -27,6 +27,16 @@
     .has-image-centered {
       margin-left: auto;
       margin-right: auto;
+    }
+
+    a.footer-link:hover{
+      text-decoration: none;
+      color: #1d1d1d;
+    }
+
+    a.active-nav-link:hover{
+      text-decoration: none;
+      color: #1d1d1d;
     }
 
     .OTP{
@@ -49,39 +59,28 @@
 </head>
 
 <body>
-  <div class="conatiner-fluid">
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-
-  <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-    <span aria-hidden="true"></span>
-    <span aria-hidden="true"></span>
-    <span aria-hidden="true"></span>
-  </a>
-
-<div id="navbarBasicExample" class="navbar-menu">
-
-
-  <div class="navbar-end">
-    <a class="navbar-item">
-      Home
-    </a>
-    <a class="navbar-item">
-      Csea
-    </a>
-    <a class="navbar-item">
-      Campskill
-    </a>
-    <a class="navbar-item">
-      Adhaar
-    </a>
-    <a class="navbar-item">
-      About
-    </a>
-
-  </div>
-</div>
-</nav>
-</div>
+  <section>
+    <nav class="navbar" role="navigation" aria-label="main navigation" style="padding-top: 2rem; padding-right: 2rem;">
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item active-nav-link" href="https://adikundu.github.io/">
+            <span><nobr>Home</nobr></span>
+          </a>
+          <a class="navbar-item nav-link" href="https://adikundu.github.io/about">
+            <span><nobr>About</nobr></span>
+          </a>
+          <a class="navbar-item nav-link" href="https://adikundu.github.io/#project-section">
+            <span><nobr>Projects</nobr></span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </section>
 
 
 
@@ -277,12 +276,8 @@ THiS IS SECTION FOR FONTS AND COLORS DISPLAY
 <div class="level is-centered">
 <!-- The magical tile element! -->
 <h1 class="project-component-label">Font</h1>
-
 </div>
-<h1 style="font-family:Circular;font-weight: bold;
-font-style: normal;
-font-stretch: normal;
-line-height: normal;" class="title is-size-3">Circular</h1>
+<img src="https://via.placeholder.com/150">
 </div>
 <div class="column is-3">
 <div class="level is-centered">
@@ -317,10 +312,7 @@ line-height: normal;" class="title is-size-3">Circular</h1>
 
   </div>
   <div class="column is-2" style="margin-left: 4rem;">
-    <p style="font-family:Circular;font-weight: bold;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: normal;" class="title is-size-3">Colours</p>
+    <img src="https://via.placeholder.com/150">
 
 </div>
 
@@ -340,9 +332,9 @@ line-height: normal;" class="title is-size-3">Circular</h1>
 </div>
 <div class="hero-foot">
   <div class="container has-text-centered">
-    <h1 class="project-image-label">
+    <p class="project-image-label">
       Font and colour choices for the visual system.
-    </h1>
+    </p>
   </div>
 </div>
 
@@ -418,7 +410,7 @@ line-height: normal;" class="title is-size-3">Circular</h1>
   <div class="colums">
     <div class="column is-8 is-offset-2">
 <div id="carouselExampleControls-1" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
+  <div class="carousel-inner" style="border-radius: 2px;">
     <div class="carousel-item active">
       <img class="d-block w-100" src="https://imgur.com/WE8Sqcv.png" alt="First slide">
     </div>
@@ -491,9 +483,9 @@ line-height: normal;" class="title is-size-3">Circular</h1>
 <section class="hero">
 <div class="hero-body">
 
- <div class="columns is-vcentered">
-  <div class="column is-6">
-  <img class="OTP" src="https://imgur.com/1ytzRHr.png" alt="">
+ <div class="columns is-vcentered" style="border-radius: 2px;">
+  <div class="column is-6" style="box-shadow: 9px 15px 100px -40px rgba(0,0,0,0.75);">
+  <img src="https://imgur.com/1ytzRHr.png" alt="">
   </div>
   <div class="column is-4 is-offset-1">
   <p class="project-body-text">
@@ -537,7 +529,7 @@ Expected wait time for the OTP service used by the company was 65 seconds. To mi
 
  <div class="columns is-vcentered   is-mobile">
 <!--box-shadow: 0 0 100px #000;-->
-  <div style="background:white;  box-shadow: 4px 4px 5px 2px rgba(84,84,84,0.33);" class="column is-half is-offset-one-quarter has-text-centered ">
+  <div style="background:white; box-shadow: 9px 15px 87px -37px rgba(0,0,0,0.75);" class="column is-half is-offset-one-quarter has-text-centered ">
     <section class="hero">
     <div class="hero-body">
     <h1  style="color:#604AE7"class="title">
@@ -612,7 +604,7 @@ Aadhaar is the world's largest biometric ID system, with over 1.33 billion enrol
   <div class="colums">
     <div class="column is-8 is-offset-2">
 <div id="carouselExampleControls-2" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
+  <div class="carousel-inner" style="border-radius: 2px;">
     <div class="carousel-item active">
       <img class="d-block w-100" src="https://imgur.com/WE8Sqcv.png" alt="First slide">
     </div>
@@ -644,8 +636,8 @@ Aadhaar is the world's largest biometric ID system, with over 1.33 billion enrol
                       <div class="container">
                           <div class="columns">
                               <div class="column is-1">
-                                  <a href=""><h1 class="has-text-weight-semibold  has-text-grey is-size-7  is-hidden-mobile" style="transform:rotate(-90deg); margin: 0 -1rem; padding: 0 1rem; width: 10rem;">back
-                                      to top</h1></a>
+                                  <a class="footer-link" href=""><p class="has-text-grey is-size-7  is-hidden-mobile" style="transform:rotate(-90deg); margin: 0 -1rem; padding: 0 1rem; width: 10rem;">back
+                                      to top</p></a>
                               </div>
                               <div class="column is-four-fifths">
                                   <div class="columns has-text-grey">
