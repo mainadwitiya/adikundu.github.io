@@ -7,6 +7,7 @@
     <title>Aditya's Portfolio</title>
     <link rel="stylesheet" type="text/css" href="css/fonts/style.css">
     <link rel="stylesheet" href="css/main.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
 
   <style>
@@ -23,16 +24,41 @@
       transform: rotate(90deg);
       margin: 10px;
   }
-  .Rectangle {
-  width: 800px;
-  height: 500px;
+
+ .Rectangle {
+  width: 478.15px;
+  height: 425px;
   position: absolute;
-  top:500px;
-  left: 50px;
+  top:880px;
+  left: 90px;
   border-radius: 4px;
   background-image: linear-gradient(to left, #8066dc, #63299f);
   clip-path: polygon(0 0, 100% 0, 62% 100%, 0 90%);
   z-index: 2;
+}
+.Rectangle1 {
+width: 500px;
+height: 400px;
+position: absolute;
+top:880px;
+left: 700px;
+border-radius: 4px;
+background-image: linear-gradient(to bottom, #7cedf5, #4687e7);
+z-index: 2;
+clip-path: polygon(5% 24%, 100% 0, 100% 100%, 0 72%);
+
+
+}
+.Rectangle2 {
+  width: 531.25px;
+    height: 425px;
+position: absolute;
+top:1380px;
+left: 60px;
+border-radius: 4px;
+background-image: linear-gradient(to top, #ec9d49, #f7d473);
+clip-path: polygon(0 26%, 100% 0, 83% 100%, 6% 84%);
+z-index: 2;
 }
 
         .project-tag-mod{
@@ -68,18 +94,49 @@
 
   </style>
   <body>
-<!--    <div class="Rectangle is-hidden-mobile">
-       ****commenting out this background polygon until I get rest of the page sorted. Fix it up once I've pushed.
-    </div>-->
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-    </nav>
+
+    <div class="Rectangle is-hidden-mobile"></div>
+<div class="Rectangle1 is-hidden-mobile"></div>
+<div class="Rectangle2 is-hidden-mobile"></div>
+      <section>
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+
+
+    <div class="navbar-end">
+      <a class="navbar-item">
+        Home
+      </a>
+      <a class="navbar-item">
+        Csea
+      </a>
+      <a class="navbar-item">
+        Campskill
+      </a>
+      <a class="navbar-item">
+        Adhaar
+      </a>
+      <a class="navbar-item">
+        About
+      </a>
+
+    </div>
+  </div>
+</nav>
+    </section>
+
+
+
+
+
     <main>
         <section class="container">
             <div class="column home-padding-mod">
@@ -98,7 +155,7 @@
                     </div>
                 </div>
                 <div class="columns home-padding-mod">
-                    <div  style="position:relate;z-index:100" class="column is-5 card-margin-mod">
+                    <div  style="position:relate;z-index:100" class="column is-4 card-margin-mod">
                             <div style="margin: 10px 0;">
                                     <a class="button project-tag-mod">BRANDING</a>
                                     <a class="button project-tag-mod">UI</a>
@@ -119,7 +176,7 @@
                         </div>
                     </div>
 
-                    <div class="column is-5 is-offset-1 card-margin-mod">
+                    <div style="position:relate;z-index:100"  class="column is-4 is-offset-2 card-margin-mod">
                             <div style="margin: 10px 0;">
                                     <a class="button project-tag-mod">BRANDING</a>
                             </div>
@@ -141,7 +198,7 @@
                     </div>
                 </div>
                 <div class="columns home-padding-mod">
-                    <div  style="position:relate;z-index:100" class="column is-5 card-margin-mod">
+                    <div  style="position:relate;z-index:100" class="column is-4 card-margin-mod">
                             <div style="margin: 10px 0;">
                                     <a class="button project-tag-mod">BRANDING</a>
                             </div>
@@ -195,5 +252,7 @@
     </div>
 
     <script type="text/javascript" src="lib/main.js"></script>
+
+
   </body>
 </html>
