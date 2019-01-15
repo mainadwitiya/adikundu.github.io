@@ -4513,8 +4513,8 @@ html.has-navbar-fixed-bottom {
 a.navbar-item:hover, a.navbar-item.is-active,
 a.navbar-link:hover,
 a.navbar-link.is-active {
-  background-color: whitesmoke;
-  color: #3273dc; }
+  background-color: #ffffff;
+  color: #B8BECB;}
 
 .navbar-item {
   flex-grow: 0;
@@ -6580,6 +6580,7 @@ label.panel-block {
         .footer-link{
             color: #1d1d1d;
             cursor: pointer;
+            font-family: Colfax Regular;
         }
 
         .katwao-apna{
@@ -6651,7 +6652,7 @@ label.panel-block {
             }
 
             .container-margin-mod{
-                margin-top: 4rem;
+                margin-top: 2rem;
             }
 
             .home-padding-mod{
@@ -6698,5 +6699,21 @@ label.panel-block {
           color: #ffffff;
           background: #1d1d1d;
         }
+
+        .active-nav-link{
+  color:#1d1d1d;
+  cursor: pointer;
+  font-family: Colfax Regular;
+}
+
+.nav-link{
+  color: #B8BECB;
+  cursor: pointer;
+  font-family: Colfax Regular;
+}
+
+a.active-nav-link:hover{
+  color: #1d1d1d;
+}
 
 
