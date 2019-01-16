@@ -8,7 +8,7 @@
     <title>Aditya's Portfolio</title>
     <link rel="stylesheet" type="text/css" href="css/fonts/style.css">
     <link rel="stylesheet" href="css/main.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
 
   <style>
@@ -137,13 +137,13 @@ z-index: 2;
             <div class="column home-padding-mod">
                 <div class="columns" style="margin-left: 0rem;">
                   <div class="column is-two-fifths is-size-5 body-text-padding-mod">
-                      <p class="home-header-text">Hi there!</p>
+                      <p id="eggo-hover" class="home-header-text">Hi there!</p>
                       <p class="home-header-text">I'm Kundu. I'm a CS undergrad who practices design. Looking forward to pursing a graduate degree in Human-Computer Interaction!</p>
                       <p class="home-header-text" style="padding:2rem 0; color: #B8BECB;">Read more about me <a href="https://adikundu.github.io/about" class="footer-link"><span><nobr>here</nobr></span></a></p>
                   </div>
                   <div class="column is-2 is-offset-3 is-hidden-mobile">
                     <figure class="image is-4by5" style="width: 15rem; height: 15rem; margin-top: -2rem;">
-                      <img src="css/assets/lilWhale.png">
+                      <img id="eggo-img" src="css/assets/lilWhale.png">
                     </figure>
                   </div>
                 </div>
@@ -234,7 +234,7 @@ z-index: 2;
                                   </div>
                                   <div class="column is-4 is-offset-3">
                                       <p class="project-image-label credits-padding-mod">
-                                          With some legendary assist from <a class="footer-link" href="https://github.com/mainadwitiya"><span><nobr>Adwitiya</nobr></span></a>, this site was designed and developed at home! ^.^
+                                          With some legendary assist from <a class="footer-link" href="https://github.com/mainadw"><span><nobr>Adwitiya</nobr></span></a>, this site was designed and developed at home! ^.^
                                       </p>
                                   </div>
                               </div>
@@ -248,7 +248,19 @@ z-index: 2;
 
     </div>
 
-    <script type="text/javascript" src="lib/main.js"></script>
+    <script type="text/javascript" src="lib/main.js">
+      function Start() {
+
+        $('#eggo-hover').on({
+
+        mouseenter: function () { $('#eggo-img').prop('src', 'css/assets/lilWhale1.gif') },
+        mouseleave: function () { $('#eggo-img').prop('src', 'css/assets/lilWhale.png') }
+
+          });
+}
+
+$(Start);
+    </script>
 
 
   </body>
