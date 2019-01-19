@@ -99,12 +99,23 @@ z-index: 2;
   padding-bottom: 1.9rem;
 }
 
+.bg-lines{
+  position: fixed;
+  margin-left: 15rem;
+  width: 3px;
+  height: 100%;
+  background-color: #2F2F2F;
+  z-index: 1;
+  opacity: 0.77;
+}
+
   </style>
   <body>
 
-    <div class="Rectangle is-hidden-mobile"></div>
+<div class="Rectangle is-hidden-mobile"></div>
 <div class="Rectangle1 is-hidden-mobile"></div>
 <div class="Rectangle2 is-hidden-mobile"></div>
+
   <section>
     <nav class="navbar" role="navigation" aria-label="main navigation" style="padding-top: 2rem; padding-right: 2rem;">
       <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -142,17 +153,18 @@ z-index: 2;
                       <p class="home-header-text" style="padding:2rem 0; color: #B8BECB;">Read more about me <a href="https://adikundu.github.io/about" class="footer-link"><span><nobr>here</nobr></span></a></p>
                   </div>
                   <div class="column is-2 is-offset-3 is-hidden-mobile">
-                    <figure class="image is-4by5" style="width: 15rem; height: 15rem; margin-top: -2rem;">
-                      <img id="eggo-img" src="css/assets/lilWhale.png">
+                    <figure class="image is-4by5" style="width: 18rem; height: 18rem; margin-top: -4rem;">
+                      <img id="eggo-img" src="css/assets/lilWhale1.gif">
                     </figure>
                   </div>
                 </div>
         </section>
-        <section style="background-color: #1d1d1d; position:relative;" id="project-section">
+        <section style="background-color: #1d1d1d; position:relative;" id="project-section" >
+          <div class="bg-lines"></div>
             <div class="container" style="padding:3rem 0;">
                 <div class="columnn home-padding-mod">
                     <div class="column is-two-fifths body-text-padding-mod jugaad">
-                        <p class="home-header-text has-text-white">Here's a few project that I've worked on the past few years.</p>
+                        <p class="home-header-text has-text-white" style="z-index: 5;">Here's a few project that I've worked on the past few years.</p>
                     </div>
                 </div>
                 <div class="columns home-padding-mod">
