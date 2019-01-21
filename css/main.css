@@ -3501,10 +3501,32 @@ a.tag:hover {
 
 .card {
   background-color: white;
-  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
   color: #4a4a4a;
   max-width: 100%;
-  position: relative; }
+  position: relative;
+   -webkit-transition: all 300ms ease;
+    -webkit-transform: scale(1);
+    -ms-transition: all 300ms ease;
+    -ms-transform: scale(1);
+    -moz-transition: all 300ms ease;
+    -moz-transform: scale(1);
+    transition: all 300ms ease;
+    transform: scale(1);
+}
+
+.card:hover{
+    z-index: 200;
+    -webkit-transition: all 300ms ease;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 300ms ease;
+    -ms-transform: scale(1.05);
+    -moz-transition: all 300ms ease;
+    -moz-transform: scale(1.05);
+    transition: all 300ms ease;
+    transform: scale(1.05);
+    box-shadow: 0px 23px 149px -34px rgba(29,29,29,1);
+}
+
 
 .card-header {
   align-items: stretch;
@@ -6577,6 +6599,13 @@ label.panel-block {
             font-size: 1.15rem;
         }
 
+        .is-alt-footer-text{
+            line-height: 1.6;
+            font-family: Colfax Regular;
+            color: #4a4a4a;
+            font-size: 1.15rem;
+        }
+
         .footer-link{
             color: #1d1d1d;
             cursor: pointer;
@@ -6647,6 +6676,10 @@ label.panel-block {
                 padding-left: 6rem;
             }
 
+            .nav-padding-mod{
+              padding-right: 2rem;
+            }
+
             .section-hero-mod{
                 border-radius: 5px;
             }
@@ -6667,6 +6700,10 @@ label.panel-block {
 
             .credits-padding-mod{
               padding-top: 6rem;
+            }
+
+            .mini-card-mod{
+              margin-left: 1rem;
             }
         }
 
@@ -6729,7 +6766,6 @@ a.active-nav-link:hover{
 a.highlight-text{
       font-family: Colfax-Medium;
       margin-bottom: 0rem;
-      text-decoration: none;
       cursor: default;
       display: inline;
       text-decoration: none;
@@ -6777,3 +6813,29 @@ a.highlight-text{
   opacity: 0.03;
 }
 
+.bg-poly-1 {
+  width: 12rem;
+  height: 6rem;
+  position: absolute;
+  top:-0.5rem;
+  left: -0.5rem;
+  border-radius: 2px;
+  background-image: linear-gradient(to left, #8066dc, #63299f);
+  clip-path: polygon(0 0, 100% 0, 62% 100%, 0 90%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 62% 100%, 0 90%);
+  z-index: -2;
+}
+
+.bg-poly-2 {
+width: 12rem;
+height: 6rem;
+position: absolute;
+top:-0.5rem;
+left:-0.5rem;
+border-radius: 4px;
+background-image: linear-gradient(to bottom, #7cedf5, #4687e7);
+z-index: -2;
+clip-path: polygon(5% 24%, 100% 0, 100% 100%, 0 72%);
+-webkit-clip-path: polygon(5% 24%, 100% 0, 100% 100%, 0 72%);
+
+}
