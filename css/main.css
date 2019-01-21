@@ -6661,7 +6661,7 @@ label.panel-block {
 
             .footer-padding-mod{
               padding-top: 3rem;
-              padding-bottom: 3rem;
+              padding-bottom: 1rem;
               padding-left: 5rem;
             }
 
@@ -6725,6 +6725,17 @@ label.panel-block {
 a.active-nav-link:hover{
   color: #1d1d1d;
 }
+
+a.highlight-text{
+      font-family: Colfax-Medium;
+      margin-bottom: 0rem;
+      text-decoration: none;
+      cursor: default;
+      display: inline;
+      text-decoration: none;
+      color: #545454;
+    }
+
 
     .bg-lines{
   position: fixed;

@@ -27,39 +27,39 @@
   }
 
  .Rectangle {
-  width: 478.15px;
-  height: 425px;
+  width: 30rem;
+  height: 27rem;
   position: absolute;
-  top:880px;
-  left: 90px;
+  top:0rem;
+  left: 0rem;
   border-radius: 4px;
   background-image: linear-gradient(to left, #8066dc, #63299f);
   clip-path: polygon(0 0, 100% 0, 62% 100%, 0 90%);
-  z-index: 2;
+  z-index: -2;
 }
 .Rectangle1 {
-width: 500px;
-height: 400px;
+width: 32rem;
+height: 25rem;
 position: absolute;
-top:880px;
-left: 700px;
+top:0rem;
+left:-2rem;
 border-radius: 4px;
 background-image: linear-gradient(to bottom, #7cedf5, #4687e7);
-z-index: 2;
+z-index: -2;
 clip-path: polygon(5% 24%, 100% 0, 100% 100%, 0 72%);
 
 
 }
 .Rectangle2 {
-  width: 531.25px;
-    height: 425px;
+  width: 33rem;
+    height: 25rem;
 position: absolute;
-top:1380px;
-left: 60px;
+top:0rem;
+left: -2rem;
 border-radius: 4px;
 background-image: linear-gradient(to top, #ec9d49, #f7d473);
 clip-path: polygon(0 26%, 100% 0, 83% 100%, 6% 84%);
-z-index: 2;
+z-index: -2;
 }
 
         .project-tag-mod{
@@ -112,9 +112,8 @@ z-index: 2;
   </style>
   <body>
 
-<div class="Rectangle is-hidden-mobile"></div>
-<div class="Rectangle1 is-hidden-mobile"></div>
-<div class="Rectangle2 is-hidden-mobile"></div>
+
+
 
   <section>
     <nav class="navbar" role="navigation" aria-label="main navigation" style="padding-top: 2rem; padding-right: 2rem;">
@@ -167,7 +166,8 @@ z-index: 2;
                     </div>
                 </div>
                 <div class="columns home-padding-mod">
-                    <div  style="position:relate;z-index:100" class="column is-5 card-margin-mod">
+                    <div  style="position:relative; z-index:100;" class="column is-5 card-margin-mod">
+                      <div class="Rectangle is-hidden-mobile"></div>
                             <div style="margin: 10px 0;">
                                     <a class="button project-tag-mod">BRANDING</a>
                                     <a class="button project-tag-mod">UI</a>
@@ -188,7 +188,8 @@ z-index: 2;
                         </div>
                     </div>
 
-                    <div style="position:relate;z-index:100"  class="column is-5 is-offset-2 card-margin-mod">
+                    <div style="position:relative; z-index:100;"  class="column is-5 is-offset-2 card-margin-mod">
+                      <div class="Rectangle1 is-hidden-mobile"></div>
                             <div style="margin: 10px 0;">
                                     <a class="button project-tag-mod">BRANDING</a>
                             </div>
@@ -210,7 +211,8 @@ z-index: 2;
                     </div>
                 </div>
                 <div class="columns home-padding-mod">
-                    <div  style="position:relate;z-index:100" class="column is-5 card-margin-mod">
+                    <div  style="position:relative;z-index:100" class="column is-5 card-margin-mod">
+                      <div class="Rectangle2 is-hidden-mobile"></div>
                             <div style="margin: 10px 0;">
                                     <a class="button project-tag-mod">BRANDING</a>
                             </div>
